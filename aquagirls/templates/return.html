@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>水水姑娘 | 體驗中心</title>
+    <link rel="icon" href="images/new/logo/logo_white.png">
+
+    <link rel="stylesheet" href="../CSS/aos.css">
+    <script src="../JS/aos.js"></script>
+    <script src="../js/jquery-3.6.1.min.js"></script>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        img{
+            position: absolute;
+            opacity: 0.2;
+            scale: 2;
+            top: 40%;
+            left: 45%;
+            z-index: 1;
+        }
+        .back{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            background-color: #478d8a;
+            color: white;
+        }
+        .back h1{
+            font-size:8vh;
+            letter-spacing:0.5vw;
+        }
+        .back a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #3c7774;
+            border-radius: 5%;
+            width: 150px;
+            height: 80px;
+            margin-top: 3rem;
+            color: white;
+            font-size: 3vh;
+            text-decoration: none;
+            transition: 0.5s;
+            opacity: 0.8;
+            z-index: 1;
+        }
+        .back a:hover{
+            background-color:#316461;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="back">
+        <h1 data-aos="fade-down" data-aos-delay="250">提交成功！</h1>
+        <a href="http://127.0.0.1:5500/index.html" data-aos="fade-down" data-aos-delay="500">返回主頁</a>
+    </div>
+
+    <script>
+        AOS.init();
+        $(document).load(alert("提交成功！"))
+        
+    </script>
+</body>
+
+</html>
