@@ -3,7 +3,6 @@
 $(window).on("load", function() {
     // $('.preview').fadeIn(5000);
     $(".aqua").fadeOut(2000); //delay --> 延遲幾秒才fadeOut
-
     $(".preview").fadeOut(2000);
 });
 
@@ -25,9 +24,7 @@ $(document).ready(function(){
         animateIn:"fadeIn",
         animateOut:"fadeOut", 
         autoplayTimeout:2500,
-        // margin:100,
         smartSpeed:450,
-        URLhashListener:true,
         startPosition:'URLHash',
     })
     
@@ -120,13 +117,6 @@ $(document).ready(function(){
 
 
 window.addEventListener('scroll',()=>{
-    if(window.scrollY>750){
-        $('.navbar').addClass('bg-display')
-    }
-    else{
-        
-        $('.navbar').removeClass("bg-display")
-    }
     if(window.scrollY>300){
         $('.box').addClass("dp")
     
@@ -135,17 +125,17 @@ window.addEventListener('scroll',()=>{
         $('.box').removeClass("dp")
     
     }
+    if(window.scrollY>750){
+        $('.navbar').addClass('bg-display')
+    }
+    else{
+        
+        $('.navbar').removeClass("bg-display")
+    }
 })
-// paroller
-// $('.paroller-example').paroller({
-    
-//     factorXs: 0.1,
-//     factorSm: 0.1,
-//     factorMd: -0.4,
-//     factorLg: -0.5,
-//     factorXl: -0.6,
-//     factor: -0.4,
-//     type: 'foreground',
-//     direction: 'horizontal'
-//     });
 
+window.addEventListener('mousemove', (event) => {
+    posx = event.clientX - window.innerWidth / 2
+    posy = event.clientY - window.innerHeight / 2
+    $('.photo').css('transform', 'translate(' + posx * -0.0005 + '%,' + posy * -0.0005 + '%)')
+})

@@ -24,4 +24,7 @@ window.addEventListener('mousemove', (event) => {
     posy = event.clientY - window.innerHeight / 2
     $('.aboutbg').css('transform', 'translate(' + posx * -0.00035 + '%,' + posy * -0.00035 + '%)')
     $('.product_bg').css('transform', 'translate(' + posx * -0.00035 + '%,' + posy * -0.00035 + '%)')
+    $('.product_bg').css('transform', 'translate(' + posx * -0.00035 + '%,' + posy * -0.00035 + '%)')
+    $('.stepbg').css('transform', 'translate(' + posx * -0.00035 + '%,' + posy * -0.0005 + '%)')
+    $('.contact_bg').css('transform', 'translate(' + posx * -0.00035 + '%,' + posy * -0.0005 + '%)')
 })

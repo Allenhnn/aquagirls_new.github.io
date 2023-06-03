@@ -278,6 +278,7 @@ html {
     height: 100vh;
     /* overflow: hidden; */
     filter: blur(1px);
+    scale: 1.01;
 }
 
 
@@ -663,13 +664,11 @@ html {
     z-index: 2;
     pointer-events: all;
 }
-
 .btngo{
     z-index: 3;
 }
 /* 美容小撇步 */
 #step {
-    padding: 5vh 0;
     height: auto;
     background-color: #f4f4f4;
     background: url(images_2/bg/bg3_black.jpg);
@@ -691,6 +690,7 @@ html {
 .dump_outer{
     height: 50vh;
     width: 80vw;
+    margin: 10vh 0 !important;
     /* background-color: #f4f4f4; */
 }
 .dump_outer_img{
@@ -703,7 +703,7 @@ html {
     font-size: 3vh;
     height: inherit;
     width: 50vw;
-    height: inherit;
+    margin: 5vh 0;
 }
 .dump_outer h1{
     margin: 3vh 0;
@@ -711,6 +711,7 @@ html {
 .dump_outer p{
     font-size: 2.5vh;
     text-align: center;
+    width: 35vw;
 }
 .outer-top {
     margin-top: 10vh;
@@ -794,7 +795,7 @@ html {
 
 .LT{
     transition: 0.5s;
-    background: url(images_2/bg/p1.jfif);
+    background: url(images_2/bg/p1.jpg);
     background-size: cover;
     background-position: center,center;
 }
@@ -990,14 +991,18 @@ textarea{
     color: #333;
 }
 .employee_img{
-    object-fit: cover;
     overflow: hidden;
-    background-color: #5ab7b4b5;
-    /* filter: blur(2px); */
+    background-color: #33b8b3b5;
     height: 450px;
     width: 450px;
     border-radius: 50%;
-    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.5)
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5)
+}
+.employee_img img{
+    transition: 0.5s;
+}
+.employee_img:hover img{
+    scale: 1.05;
 }
 
 
@@ -1282,6 +1287,7 @@ textarea{
    /* nav 992px */
     .navbar{
         height: auto;
+        width: auto;
     }
     .nav-link{
         display: flex;
@@ -1297,7 +1303,11 @@ textarea{
     .bg2{
         display: none;
     }
-
+    /* carousel */
+    
+    .bg_black h1{
+        font-size:6vh !important;
+    }
     /* about 992px */
     .intro{
         padding:5vh 0;
@@ -1323,6 +1333,15 @@ textarea{
     .abouttext{
         width: 80vw;
     }
+    .abouttitle{
+        display: flex;
+        justify-content: center;
+        width: 75vw;
+        font-size: 6vh;
+    }
+    .aboutfont{
+        padding: 5vh 0;
+    }
     .photo img{
         height: 100vh;
     }
@@ -1342,15 +1361,20 @@ textarea{
         width: 50vw;
     }
     #step_about{
-        padding-bottom: 20vh;
+        padding-bottom: 50vh;
     }
     .dump_outer_text{
-        order: 2;
+        order: 1;
+        width: 80vw;
+        height: 50vh;
+    }
+    .dump_outer p{
+        width: 80vw !important; 
     }
     .dump_outer_img{
         margin-bottom: 5vh;
         width: auto !important;
-        order: 1;
+        order: 2;
     }
     .dump_outer{
         margin: 15vh 0 !important; 
@@ -1378,7 +1402,7 @@ textarea{
         background: none;
         background-color: #f4f4f4 !important;
         height: auto;
-        /* flex-direction: column; */
+        flex-direction: column;
     }
     .pro_right{
         display: flex;
@@ -1386,7 +1410,17 @@ textarea{
     }
     .pro_carousel img{
         height: auto !important;
-        width: 50vw !important;
+        width: 60vw !important;
+    } 
+    .pro_left{
+        width: 100vw;
+    }
+    .pro_right{
+        height: 50vh;
+        margin-top:-20vh;
+    }
+    #change{
+        display: none;
     }
     /* employee */
     #employee{
@@ -1411,7 +1445,15 @@ textarea{
 }
 
 @media (max-width:668px) {
-
+    .bg3 p{
+        font-size: 6vh;
+    }
+    .bg_black h1{
+        font-size:4vh !important;
+    }
+    .bg_black h4{
+        font-size:2vh !important;
+    }
     .bg1 {
         display: none;
     }
@@ -1449,7 +1491,7 @@ textarea{
     /* sec1 668px */
     .photo img {
         width: 100vw;
-        height: 120%;
+        height:100vh;
     }
 
     .text_1,
@@ -1467,17 +1509,32 @@ textarea{
         justify-content: center;
         flex-wrap: nowrap;
     }
-
+    #problem h1{
+        font-size: 5vh;
+    }
+    #feedback h2{
+        font-size: 5vh;
+    }
     .i1::after,
     .i2::after {
         display: none;
     }
-
+    .outer-top {
+        margin-top: 10vh;
+        font-size: 6vh;
+    }
     /* pro 668px */
     #pro {
         flex-direction: column;
     }
-
+    .pro_out{
+        flex-direction: column;
+    }
+    
+    .pro_carousel img{
+        height: auto !important;
+        width: 70vw !important;
+    } 
     /* MAP 668px */
     #map {
         flex-direction: column;
@@ -1485,6 +1542,13 @@ textarea{
         padding-bottom: 2rem;
     }
 
+    .pro_intros h1{
+        font-size: 6vh;
+    }
+    
+    .pro_intros h4{
+        font-size: 2vh;
+    }
     #about2 {
         margin-top: -5vh;
     }
@@ -1556,6 +1620,13 @@ textarea{
         align-items: center;
     }
 
+    .aqua img{
+        scale:0.3;
+    }
+     
+    .box{
+        right: 5vw;
+    }
 }
 
 /* loader */
