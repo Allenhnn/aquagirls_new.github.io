@@ -139,7 +139,7 @@ html {
     position: fixed;
     z-index: 9999;
     bottom:5vh;
-    right: 5vw;
+    right: 3vw;
     font-size: 4.5vh;
 }
 .box div{
@@ -500,7 +500,7 @@ html {
 }
 
 #aboutus{
-    padding: 20vh 0 10vh 0;
+    padding: 10vh 0 10vh 0;
 }
 
 /* 關於我們 內容 */
@@ -675,6 +675,7 @@ html {
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
+    padding-bottom: 10vh;
 }
 #step_about{
     background-color: #f4f4f4;
@@ -1430,6 +1431,9 @@ textarea{
     #change{
         display: none;
     }
+    .dump_outer p{
+        font-size: 2vh;
+    }
     /* employee 992px */
     #employee{
         flex-direction: column;
@@ -1662,7 +1666,7 @@ textarea{
     }
      
     .box{
-        right: 5vw;
+        right: 15vw;
     }
 }
 
