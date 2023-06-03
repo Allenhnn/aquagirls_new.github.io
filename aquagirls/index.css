@@ -139,7 +139,7 @@ html {
     position: fixed;
     z-index: 9999;
     bottom:5vh;
-    right: 1vw;
+    right: 5vw;
     font-size: 4.5vh;
 }
 .box div{
@@ -500,7 +500,7 @@ html {
 }
 
 #aboutus{
-    padding: 20vh 0 5vh 0;
+    padding: 20vh 0 10vh 0;
 }
 
 /* 關於我們 內容 */
@@ -603,7 +603,7 @@ html {
 
 /* pro */
 #pro{
-    background-color: #559e9cc5;
+    background-color: #469d9a;
     padding: 2rem 0;
 }
 .pro_out{
@@ -828,7 +828,7 @@ html {
     position: relative;
     /* background-color: rgba(243, 237, 225, 0.95); */
     background-color: #469d9a;
-    background: linear-gradient(#559e9cc5,#559e9cc5,#f4f4f4);
+    background: linear-gradient(#469d9a,#469d9a,#f4f4f4);
     height: auto;
 }
 
@@ -1303,6 +1303,9 @@ textarea{
     .bg2{
         display: none;
     }
+    .nav-link::before{
+        display: none;
+    }
     /* carousel */
     
     .bg_black h1{
@@ -1319,7 +1322,9 @@ textarea{
         background-size:100% ;
         /* background-size: cover; */
     }
-    
+    #aboutus{
+        padding-bottom: 40vh;
+    }
     .about_us_img{
         width: 100vw;
         padding-top: 2rem;
@@ -1385,6 +1390,9 @@ textarea{
         flex-direction: column;
         align-items: center;
     }
+    .modal_top p{
+        width: 50vw;
+    }
     .sm_box::before{
         width: 50vw;
     }
@@ -1422,18 +1430,43 @@ textarea{
     #change{
         display: none;
     }
-    /* employee */
+    /* employee 992px */
     #employee{
         flex-direction: column;
     }
+    .employee_img img{
+        height: 200px;
+    }
     .employee_img{
         order: 1;
-        margin: 0 0 5vh 0;
+        position: absolute;
+        margin-top: 45vh;
+        background-color: transparent;
+        box-shadow: none;
+        /* margin: 0 0 5vh 0; */
     }
     .employee_intro{
         order: 2;
         width:80vw;
         line-height: 3.2rem;
+    }
+    #map{
+        flex-direction: column;
+    }
+    /* form */
+    form{
+        align-items: center;
+        justify-content: center;
+        width: 90vw;
+    }
+    textarea{
+        width: 80vw;
+    }
+    .form_outer{
+        width: 90vw;
+    }
+    input{
+        width: 60vw;
     }
     /* footer */
     .footright{
@@ -1487,7 +1520,11 @@ textarea{
         font-size: 2.5vh;
     }
 
-
+    .employee_img{
+        background-color: transparent;
+        box-shadow: none;
+        scale: 0.8;
+    }
     /* sec1 668px */
     .photo img {
         width: 100vw;
