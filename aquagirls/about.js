@@ -15,6 +15,43 @@ $(document).ready(function () {
         })
     })
 
+    // search bar
+    $('#clearbutton').click(function(){
+        $('#searchInput').val("");
+    })
+
+    const searchInput = document.getElementById('searchInput');
+    const cards = document.getElementsByClassName('card');
+    
+    searchInput.addEventListener('input', function() {
+      const searchTerm = searchInput.value.toLowerCase();
+    
+      for (let i = 0; i < cards.length; i++) {
+        const card = cards[i];
+        const tags = card.getElementsByClassName('tag');
+        
+        let hasMatch = false;
+    
+        for (let j = 0; j < tags.length; j++) {
+          const tag = tags[j];
+          const tagText = tag.innerText.toLowerCase();
+    
+          if (tagText.includes(searchTerm)) {
+            hasMatch = true;
+            break;
+          }
+        }
+    
+        if (hasMatch) {
+          card.style.display = 'block'; // 顯示符合條件的卡片
+        //   console.log(card);
+          $(".protitle").css.visibility= 0;
+        } else {
+          card.style.display = 'none'; // 隱藏不匹配的卡片
+        }
+      }
+    });
+    
     
     
 })

@@ -63,6 +63,7 @@ $(document).ready(function(){
         autoplayTimeout:4000,
         mouseDrag:false,
         rtl:true,
+       
     })
     // 罐子說明
     $(".pro_intros").owlCarousel({

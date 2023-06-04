@@ -993,11 +993,12 @@ textarea{
 }
 .employee_img{
     overflow: hidden;
-    background-color: #33b8b3b5;
+    background-color: #a3e0de;
     height: 450px;
     width: 450px;
+    /* border-radius: 80% 50%  / 80% 50%; */
     border-radius: 50%;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5)
+    /* box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5) */
 }
 .employee_img img{
     transition: 0.5s;
@@ -1113,6 +1114,22 @@ textarea{
 }
 
 /* 商品分類 */
+#searchInput{
+    width: 50vw;
+    height: 5.5vh;
+    border-radius:25px;
+    padding-left: 2vw;
+    box-shadow:1px 1px 5px rgba(0, 0, 0, 0.5);
+    margin-top: 5vh;
+}
+#searchInput::placeholder{
+    opacity: 0.5;
+}
+
+#searchInput:active #searchInput::placeholder{
+    opacity: 1;
+}
+
 #products {
     width: 100%;
     display: flex;
@@ -1434,6 +1451,16 @@ textarea{
     .dump_outer p{
         font-size: 2vh;
     }
+
+    /* aboutbg 992px */
+    .aboutbg{
+        background-repeat: no-repeat;
+        background-size: 200%;
+        background-position-y:2vh;
+    }
+    .stepbg{
+        background-size: 150%;
+    }
     /* employee 992px */
     #employee{
         flex-direction: column;
@@ -1457,7 +1484,7 @@ textarea{
     #map{
         flex-direction: column;
     }
-    /* form */
+    /* form  992px*/
     form{
         align-items: center;
         justify-content: center;
@@ -1626,6 +1653,21 @@ textarea{
 
     /* consumer 668px */
 
+    /* searchInput 668px */
+    .form_outer h1{
+        display: flex;
+        justify-content: center;
+        font-size: 2.5vh;
+    }
+    #searchInput{
+        width: 80vw;
+    }
+    #searchInput::placeholder{
+        font-size: 2vh;
+    }
+    #clearbutton{
+        margin-left: -7vw !important;
+    }
 
     /* footer 668px */
     .footers {
@@ -1659,6 +1701,9 @@ textarea{
     .protitle{
         flex-direction:column ;
         align-items: center;
+    }
+    .protitle h1{
+        margin: 5vh 5vh 0 0;
     }
 
     .aqua img{
