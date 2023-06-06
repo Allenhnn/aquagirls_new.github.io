@@ -24,7 +24,7 @@ $(document).ready(function () {
     const cards = document.getElementsByClassName('card');
     
     searchInput.addEventListener('input', function() {
-      const searchTerm = searchInput.value.toLowerCase();
+      const searchTerm = searchInput.value.toString();
     
       for (let i = 0; i < cards.length; i++) {
         const card = cards[i];
@@ -34,7 +34,7 @@ $(document).ready(function () {
     
         for (let j = 0; j < tags.length; j++) {
           const tag = tags[j];
-          const tagText = tag.innerText.toLowerCase();
+          const tagText = tag.innerText.toString();
     
           if (tagText.includes(searchTerm)) {
             hasMatch = true;
@@ -44,13 +44,18 @@ $(document).ready(function () {
     
         if (hasMatch) {
           card.style.display = 'block'; // 顯示符合條件的卡片
-        //   console.log(card);
-          $(".protitle").css.visibility= 0;
+          console.log(typeof card)
+
         } else {
           card.style.display = 'none'; // 隱藏不匹配的卡片
         }
       }
     });
+
+    $("#hot_search").click(function(){
+      var button_text = $(this).text();
+      $("#searchInput").val(button_text);
+    })
     
     
     

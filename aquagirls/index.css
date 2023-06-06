@@ -7,7 +7,9 @@ html {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
-
+body{
+    width: 100vw !important;
+}
 /* #index {
     background: url(images/IMG_0494.JPG);
     background-attachment: fixed;
@@ -139,7 +141,7 @@ html {
     position: fixed;
     z-index: 9999;
     bottom:5vh;
-    right: 3vw;
+    right: 1vw;
     font-size: 4.5vh;
 }
 .box div{
@@ -938,6 +940,7 @@ input{
     margin: 0 0 2vh 0;
     height: 40px;
 }
+
 textarea:focus,
 input:focus{
     
@@ -1195,7 +1198,7 @@ textarea{
 }
 .modal_img {
     margin-left:50% ;
-    width: 100px;
+    width: 80px;
 }
 
 .modal-dialog {
@@ -1305,7 +1308,7 @@ textarea{
    /* nav 992px */
     .navbar{
         height: auto;
-        width: auto;
+        width: 100vw;
     }
     .nav-link{
         display: flex;
@@ -1591,6 +1594,9 @@ textarea{
         margin-top: 10vh;
         font-size: 6vh;
     }
+    .dump_outer_img img{
+        height: 200px;
+    }
     /* pro 668px */
     #pro {
         flex-direction: column;
@@ -1624,6 +1630,13 @@ textarea{
     .aboutbg {
         font-size: 3rem;
     }
+    #step_about{
+        width: 100vw !important;
+    }
+    .img-fluid{
+        height: 200px;
+        width: auto;
+    }
 
     .mapimfor {
         order: 1;
@@ -1640,9 +1653,7 @@ textarea{
     }
     iframe{
         width: 90vw;
-
     }
-
     .mapimg {
         order: 2;
     }
@@ -1710,9 +1721,7 @@ textarea{
         scale:0.3;
     }
      
-    .box{
-        right: 15vw;
-    }
+    
 }
 
 /* loader */
