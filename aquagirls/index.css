@@ -120,7 +120,7 @@ body{
 }
 .bg-transparent{
     background-color: transparent !important;
-    opacity: 0.3;
+    opacity: 0;
     box-shadow: none !important;
     pointer-events: none;
 }
