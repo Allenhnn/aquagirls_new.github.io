@@ -1384,7 +1384,7 @@ textarea{
     }
     .sm_box{
         margin: 2vh 0;
-        width: 50vw;
+        width: 90vw;
     }
     #step_about{
         padding-bottom: 50vh;
@@ -1415,7 +1415,7 @@ textarea{
         width: 50vw;
     }
     .sm_box::before{
-        width: 50vw;
+        width: 90vw;
     }
     .modal_top h1{
         order: 1;
