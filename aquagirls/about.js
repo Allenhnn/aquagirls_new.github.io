@@ -18,6 +18,7 @@ $(document).ready(function () {
     // search bar
     $('#clearbutton').click(function(){
         $('#searchInput').val("");
+        document.getElementById("searchInput").dispatchEvent(new Event("input"))
     })
 
     const searchInput = document.getElementById('searchInput');

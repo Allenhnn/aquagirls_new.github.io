@@ -130,7 +130,6 @@ window.addEventListener('scroll',()=>{
         $('.navbar').addClass('bg-display')
     }
     else{
-        
         $('.navbar').removeClass("bg-display")
     }
 })

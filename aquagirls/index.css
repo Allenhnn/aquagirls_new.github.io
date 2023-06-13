@@ -130,6 +130,11 @@ body{
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5) !important;
     pointer-events: fill;
 }
+.btn-db{
+    background-color: #469d9a;
+    border: white;
+    color: white;
+}
 /* //////////////////// */
 /* box */
 .box{
@@ -213,7 +218,6 @@ body{
 .nav-link{
     letter-spacing: 1px;
     font-family: 'Noto Sans TC', sans-serif;
-    font-weight: 600;
     margin: 0 1rem;
     font-size: 2.2vh;
     color: rgba(255, 255, 255, 0.825) !important;
@@ -926,6 +930,8 @@ form{
     padding: 5vh 0;
 }
 .form_outer{
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 1px 1px 5px #333; */
     background-color: #f4f4f4;
     border-radius: 5%;
     width: 60vw;
@@ -1501,6 +1507,9 @@ textarea{
     }
     input{
         width: 60vw;
+    }
+    form button{
+        width: 75vw !important;
     }
     /* footer */
     .footright{
